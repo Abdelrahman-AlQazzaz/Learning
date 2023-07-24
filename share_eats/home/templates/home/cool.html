@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Django Hero About Demo</title>
+  </head>
+  <body>
+    <h1>Cool Django Website</h1>
+    <p><a href="about">Go to the About Page</a></p>
+    <h2>My Favourite Words:</h2>
+    <div class="objects">
+      {% for post in objects%}
+    <div class="post">
+      <h3><a href="#">{{post.title}}</a></h3>
+      <p>{{post.body}}</p>
+    </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
